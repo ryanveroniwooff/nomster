@@ -1,3 +1,25 @@
-// Place all the styles related to the places controller here.
+/* Place all the styles related to the places controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com*/
+
+.pagination {
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	width:100%;
+	text-align:center;
+    display: block;
+    background-color:black;
+    padding: 0;
+    margin: 0;
+}
+
+
+.pagination a, .previous_page.disabled {
+	color: purple;
+	font-family: 'Creepster', cursive;
+	font-size: 25px;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}

@@ -1,4 +1,4 @@
-<div class="booyah-box">
+<div class="booyah-box" style="margin-top:0;">
   <div class="col-xs-4">
     <%= image_tag 'user.png' %>
   </div>
@@ -13,6 +13,7 @@
 </div>
 
 <br /><br />
+<div id="profile_info_container" class="booyah-box col-xs-10 col-xs-offset-1">
 <h1 class="text-center">My Comments</h1>
 <br /><br />
 <% @user.comments.each do |comment| %>
@@ -34,7 +35,7 @@
 <br /><br />
 <h2 class="text-center">My Places</h2>
 <br /><br />
-<% @user.places.each do |place| %>
+<span class="a"><% @user.places.each do |place| %></span>
   <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1><br />
     <i><%= place.address %></i><br />
@@ -57,3 +58,4 @@
     <% end %>
   </div>
 <% end %>
+</div>

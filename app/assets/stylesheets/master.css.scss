@@ -2,11 +2,14 @@
 @import "bootstrap";
 @import 'https://fonts.googleapis.com/css?family=Lobster|Creepster';
 
+#profile_info_container{
+  background: url('/assets/pattern4.png');
+}
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff;
+  background: url('/assets/pattern4.png');
  /* border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;*/
   margin-top:10px;
@@ -18,13 +21,13 @@ h1 a{
   margin:0;
   padding:0;
   text-decoration-line:none;
-  color:black;
+  color:purple;
 }
 h1, h2, h3, h4, h5, h6, {
 	margin:0;
 	padding:0;
 }
-h1 a:hover{
+h1 a:hover, h2 a:hover{
   color:purple;
   text-decoration:none;
 }
@@ -33,7 +36,7 @@ body {
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 
 }
-body h1{
+body h1, h1 a, h2 a{
 	font-family: 'Creepster', cursive;
   text-decoration:none;
   color:black;
@@ -61,6 +64,7 @@ body h1{
     clear: both;
 }
 blockquote {
+  display:inline-block;
   background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;

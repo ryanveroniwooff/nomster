@@ -47,7 +47,7 @@ body h1, h1 a, h2 a{
 	box-shadow: 0px 1px 3px #2a2a2a;
   margin-bottom: 0;
 }
-.navbar-inverse .navbar-brand {
+.navbar-inverse .navbar-brand, #myModalLabel {
 	color: purple;
 	font-family: 'Creepster', cursive;
 }
@@ -82,6 +82,12 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+.image {
+  max-width: 250px;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+}
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     max-height: 550px;
     width: 100%;
@@ -89,7 +95,7 @@ blockquote p {
 .carousel-indicators{
   margin-bottom: 0px;
 }
-.carousel-caption {
+.carousel-caption{
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 60px;
     font-weight:100;
@@ -100,6 +106,20 @@ blockquote p {
     margin-bottom:-20px;
     left:0;
 }
+#img {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px; 
+    position: absolute;
+}
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
+}
+#myModalLabel {
+  font-size: 50px;
+
 }

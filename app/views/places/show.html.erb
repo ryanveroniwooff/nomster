@@ -53,7 +53,7 @@
         <h4 class="modal-title" id="myModalLabel">Image Upload</h4>
       </div>
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-          <div class="modal-body">
+          <div class="modal-body pull-left">
           <%= f.input :picture %>
           <%= f.input :caption %>
           </div>

@@ -5,6 +5,11 @@
   <i><%= @place.address %></i>
   <br/><br/>
   <p><%= @place.description %></p>
+
+
+
+
+  
 <! Places Each Photo on Page>
   <div class="booyah-box1 col-xs-8">
   <% @place.photos.each do |photo| %>
@@ -13,6 +18,15 @@
         <div class="clear"></div>
   <% end %>
   </div>
+
+
+
+
+
+
+
+
+
 <! Google Maps Integration>
 <div class="booyah-box1 col-xs-12">
 <% if @place.latitude.present? && @place.longitude.present? %>	
